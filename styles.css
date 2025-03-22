@@ -28,50 +28,46 @@ body {
 /* text style */
 
 .Perfume {
-    letter-spacing: .42rem;
+    font-size: 12px;
     font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5rem;
 }
 
 .title {
+    font-size: 32px;
+    font-weight: 700;
     color: hsl(212, 21%, 14%);
-    margin-bottom: 1.5rem;
-    font-size: 40px;
+    margin-bottom: 1.25rem;
 }
 
 .description {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .prince {
-    font-size: 2.45rem;
     font-weight: 700;
+    font-size: 32px;
     color: hsl(158, 36%, 37%);
 }
 
 .prince-2 {
-    
-    margin-left: 1.55rem;
     text-decoration: line-through;
 }
 
-.perfume-img {
-    width: 350px;
+.pay a:hover {
+    background: hsl(158, 42%, 18%);
 }
 
-.pay {
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;;
-    font-weight: 700;
-    padding-top: 2rem;
+.perfume-img {
+    width: 300px;
 }
 
 .cart-icon {
-    width: 1.75rem;
-    padding-right: 10px;
+    margin-right: .75rem;
 }
 
 /* layout styles */
@@ -83,37 +79,35 @@ body {
 }
 
 .wrapper-container {
-    overflow: hidden;
     display: flex;
-    border-radius: .8rem;
-    max-width: 700px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .product-card {
-    padding: 2.5rem;
+    padding: 2rem;
     background-color: hsl(0, 0%, 100%);
 }
 
 .prince-container {
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .pay a {
-    padding: 20px;
-    color: hsl(0, 0%, 100%);
     display: flex;
-    border-radius: .6rem;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 8px;
     justify-content: center;
-    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
     transition: background .3s ease;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(158, 36%, 37%);
 }
-
-.pay a:hover {
-    background: hsl(158, 42%, 18%);
-}
-
-/* media query */
 
 @media (max-width: 600px) {
     .wrapper-container {
@@ -126,23 +120,25 @@ body {
     }
 
     .perfume-img {
-        max-height: 300px;
         width: 100%;
+        height: 300px;
         object-fit: cover;
     }
 
     .Perfume {
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: .5rem;
     }
 
     .title {
-        font-size: 35px;
         margin-bottom: 1rem;
     }
 
     .description {
         font-size: 16px;
+    }
+
+    .prince-container {
         margin-bottom: 1rem;
     }
 }

@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: hsl(212, 21%, 14%);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: "Fraunces", serif;
+    color: hsl(228, 12%, 48%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* text style */
+
+.Perfume {
+    letter-spacing: .42rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.prince {
+    font-size: 2.45rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.prince-2 {
+    
+    margin-left: 1.55rem;
+    text-decoration: line-through;
+}
+
+.perfume-img {
+    width: 350px;
+}
+
+.pay {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.cart-icon {
+    width: 1.75rem;
+    padding-right: 10px;
+}
+
+/* layout styles */
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+
+.wrapper-container {
+    overflow: hidden;
+    display: flex;
+    border-radius: .8rem;
+    max-width: 700px;
+}
+
+.product-card {
+    padding: 2.5rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.prince-container {
+    display: flex;
+    align-items: center;
+}
+
+.pay a {
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: .6rem;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    transition: background .3s ease;
+}
+
+.pay a:hover {
+    background: hsl(158, 42%, 18%);
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+    .wrapper-container {
+        width: 375px;
+        flex-direction: column;
+    }
+
+    .product-card {
+        padding: 1.5rem;
+    }
+
+    .perfume-img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Perfume {
+        font-size: 12px;
+        margin-bottom: .5rem;
+    }
+
+    .title {
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+}

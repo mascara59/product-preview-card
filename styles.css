@@ -31,7 +31,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -40,13 +40,13 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: hsl(212, 21%, 14%);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .description {
     font-size: 15px;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .prince {
@@ -95,7 +95,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .pay a {
